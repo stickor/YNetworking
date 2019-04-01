@@ -20,6 +20,7 @@ NSString *const kBaseUrl = @"https://www.baidu.com";
 +(void)requestUrl:(NSString *)url requestMethod:(YRequestType)method param:(NSDictionary *)aParam andhandler:(YHandlerBlock)handlerBlock
 {
     YNetworkRequest *request = [YNetworkRequest new];
+//    request.unAllowProxy = YES;
     //request.requestHeaderField = @{};
     //request.requestSerializerJSON = YES;
 //    __weak __typeof(self)weakSelf = self;

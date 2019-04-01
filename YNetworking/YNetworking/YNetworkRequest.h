@@ -27,6 +27,8 @@
 @property (nonatomic) int intervalInSeconds;
 /// BDEBUG 状态下是否显示打印
 @property (nonatomic) BOOL showLog;
+/// 不允许开启代理（防止被抓包数据） 默认允许
+@property (nonatomic) BOOL unAllowProxy;
 
 /**
  普通请求通用方法
