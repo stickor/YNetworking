@@ -84,7 +84,8 @@ typedef void(^YNetworkStatus)(YNetworkStatusType status);
 
 /// WiFi网络:YES, 反之:NO
 + (BOOL)isWiFiNetwork;
-
+/// 获取该请求是否被设置了代理（防代理抓包）
++ (BOOL)getProxyStatusURL:(NSURL *)url;
 /// 取消所有HTTP请求
 + (void)cancelAllRequest;
 

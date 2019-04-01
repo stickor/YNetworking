@@ -70,6 +70,22 @@ static AFHTTPSessionManager *_sessionManager;
     _isOpenLog = NO;
 }
 
+/// 网络代理验证（防代理抓包）
++ (BOOL)getProxyStatusURL:(NSURL *)url {
+    
+    NSDictionary *proxySettings = (__bridge NSDictionary *)(CFNetworkCopySystemProxySettings());
+    NSArray *proxies = (__bridge NSArray *)(CFNetworkCopyProxiesForURL((__bridge CFURLRef _Nonnull)(url), (__bridge CFDictionaryRef _Nonnull)(proxySettings)));
+    
+    NSDictionary *settings = proxies[0];
+    if ([[settings objectForKey:(NSString *)kCFProxyTypeKey] isEqualToString:@"kCFProxyTypeNone"]) {
+        //YLog(@"没设置代理");
+        return NO;
+    } else {
+        YLog(@"设置了代理");
+        return YES;
+    }
+}
+
 + (void)cancelAllRequest {
     // 锁操作
     @synchronized(self) {
