@@ -23,11 +23,13 @@
         self.retryTimes = 0;
         self.intervalInSeconds = 0;
         self.showLog = YES;
+        self.unAllowProxy = NO;
 #else
         self.timeoutTime = 30.0;
         self.retryTimes = 1;
         self.intervalInSeconds = 2;
         self.showLog = NO;
+        self.unAllowProxy = NO;
 #endif
     }
     return self;
@@ -40,6 +42,11 @@
         NSLog(@"url is nil");
         return ;
     }
+    //是否允许开启代理
+    if (self.unAllowProxy && [self getProxyStatusURL:[NSURL URLWithString:url]]) {
+        return;
+    }    
+    // 是否需要打印
     if (self.showLog) {
         NSLog(@"Request URL is: %@",url);
         NSArray *methodArr = @[@"GET",@"POST",@"PUT",@"PATCH",@"DELETE"];
@@ -123,5 +130,25 @@
         handlerBlock(nil,error);
     }];
 }
+
+/// 网络代理验证（防代理抓包）
+- (BOOL)getProxyStatusURL:(NSURL *)url {
+    
+    NSDictionary *proxySettings = (__bridge NSDictionary *)(CFNetworkCopySystemProxySettings());
+    NSArray *proxies = (__bridge NSArray *)(CFNetworkCopyProxiesForURL((__bridge CFURLRef _Nonnull)(url), (__bridge CFDictionaryRef _Nonnull)(proxySettings)));
+    
+    NSDictionary *settings = proxies[0];
+    if ([[settings objectForKey:(NSString *)kCFProxyTypeKey] isEqualToString:@"kCFProxyTypeNone"])
+    {
+        // NSLog(@"没设置代理");
+        return NO;
+    }
+    else
+    {
+        NSLog(@"设置了代理");
+        return YES;
+    }
+}
+
 
 @end
