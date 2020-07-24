@@ -14,10 +14,10 @@
 		FD4134D8215DD264001AD786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4134D7215DD264001AD786 /* Assets.xcassets */; };
 		FD4134DB215DD264001AD786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4134D9215DD264001AD786 /* LaunchScreen.storyboard */; };
 		FD4134DE215DD264001AD786 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4134DD215DD264001AD786 /* main.m */; };
-		FD4134EB215DD30A001AD786 /* YNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4134E6215DD30A001AD786 /* YNetworkCache.m */; };
-		FD4134EC215DD30A001AD786 /* YNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4134E8215DD30A001AD786 /* YNetworkHelper.m */; };
-		FD4134ED215DD30A001AD786 /* YNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4134EA215DD30A001AD786 /* YNetworkRequest.m */; };
 		FD4134F0215DD320001AD786 /* YNetworkRequestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4134EF215DD320001AD786 /* YNetworkRequestBase.m */; };
+		FD8C8F2B21B4FBFD007A3B57 /* YNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8C8F2621B4FBFD007A3B57 /* YNetworkCache.m */; };
+		FD8C8F2C21B4FBFD007A3B57 /* YNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8C8F2821B4FBFD007A3B57 /* YNetworkHelper.m */; };
+		FD8C8F2D21B4FBFD007A3B57 /* YNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8C8F2A21B4FBFD007A3B57 /* YNetworkRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +34,14 @@
 		FD4134DA215DD264001AD786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD4134DC215DD264001AD786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD4134DD215DD264001AD786 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FD4134E5215DD30A001AD786 /* YNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNetworkHelper.h; sourceTree = "<group>"; };
-		FD4134E6215DD30A001AD786 /* YNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNetworkCache.m; sourceTree = "<group>"; };
-		FD4134E7215DD30A001AD786 /* YNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNetworkRequest.h; sourceTree = "<group>"; };
-		FD4134E8215DD30A001AD786 /* YNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNetworkHelper.m; sourceTree = "<group>"; };
-		FD4134E9215DD30A001AD786 /* YNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNetworkCache.h; sourceTree = "<group>"; };
-		FD4134EA215DD30A001AD786 /* YNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNetworkRequest.m; sourceTree = "<group>"; };
 		FD4134EE215DD320001AD786 /* YNetworkRequestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNetworkRequestBase.h; sourceTree = "<group>"; };
 		FD4134EF215DD320001AD786 /* YNetworkRequestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNetworkRequestBase.m; sourceTree = "<group>"; };
+		FD8C8F2521B4FBFD007A3B57 /* YNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNetworkHelper.h; sourceTree = "<group>"; };
+		FD8C8F2621B4FBFD007A3B57 /* YNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNetworkCache.m; sourceTree = "<group>"; };
+		FD8C8F2721B4FBFD007A3B57 /* YNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNetworkRequest.h; sourceTree = "<group>"; };
+		FD8C8F2821B4FBFD007A3B57 /* YNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNetworkHelper.m; sourceTree = "<group>"; };
+		FD8C8F2921B4FBFD007A3B57 /* YNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNetworkCache.h; sourceTree = "<group>"; };
+		FD8C8F2A21B4FBFD007A3B57 /* YNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNetworkRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 		FD4134CD215DD263001AD786 /* YNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				FD4134E4215DD30A001AD786 /* YNetworking */,
+				FD8C8F2421B4FBFD007A3B57 /* Classes */,
 				FD4134CE215DD263001AD786 /* AppDelegate.h */,
 				FD4134CF215DD263001AD786 /* AppDelegate.m */,
 				FD4134D1215DD263001AD786 /* ViewController.h */,
@@ -110,17 +110,17 @@
 			path = YNetworking;
 			sourceTree = "<group>";
 		};
-		FD4134E4215DD30A001AD786 /* YNetworking */ = {
+		FD8C8F2421B4FBFD007A3B57 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FD4134E5215DD30A001AD786 /* YNetworkHelper.h */,
-				FD4134E8215DD30A001AD786 /* YNetworkHelper.m */,
-				FD4134E9215DD30A001AD786 /* YNetworkCache.h */,
-				FD4134E6215DD30A001AD786 /* YNetworkCache.m */,
-				FD4134E7215DD30A001AD786 /* YNetworkRequest.h */,
-				FD4134EA215DD30A001AD786 /* YNetworkRequest.m */,
+				FD8C8F2721B4FBFD007A3B57 /* YNetworkRequest.h */,
+				FD8C8F2A21B4FBFD007A3B57 /* YNetworkRequest.m */,
+				FD8C8F2521B4FBFD007A3B57 /* YNetworkHelper.h */,
+				FD8C8F2821B4FBFD007A3B57 /* YNetworkHelper.m */,
+				FD8C8F2921B4FBFD007A3B57 /* YNetworkCache.h */,
+				FD8C8F2621B4FBFD007A3B57 /* YNetworkCache.m */,
 			);
-			path = YNetworking;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,12 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD4134ED215DD30A001AD786 /* YNetworkRequest.m in Sources */,
+				FD8C8F2C21B4FBFD007A3B57 /* YNetworkHelper.m in Sources */,
 				FD4134D3215DD263001AD786 /* ViewController.m in Sources */,
-				FD4134EB215DD30A001AD786 /* YNetworkCache.m in Sources */,
+				FD8C8F2B21B4FBFD007A3B57 /* YNetworkCache.m in Sources */,
+				FD8C8F2D21B4FBFD007A3B57 /* YNetworkRequest.m in Sources */,
 				FD4134F0215DD320001AD786 /* YNetworkRequestBase.m in Sources */,
 				FD4134DE215DD264001AD786 /* main.m in Sources */,
-				FD4134EC215DD30A001AD786 /* YNetworkHelper.m in Sources */,
 				FD4134D0215DD263001AD786 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
