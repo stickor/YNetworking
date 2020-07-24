@@ -14,7 +14,7 @@ UIKIT_EXTERN NSString *const kBaseUrl;
 
 @interface YNetworkRequestBase : NSObject
 
-// denglu
+// denglu ndsjkfhk;sadhfk;dsja;
 +(void)requestUrl:(NSString *)url requestMethod:(YRequestType)method param:(NSDictionary *)aParam andhandler:(YHandlerBlock)handlerBlock;
 
 
