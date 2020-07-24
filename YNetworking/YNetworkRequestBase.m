@@ -20,9 +20,14 @@ NSString *const kBaseUrl = @"https://www.baidu.com";
 +(void)requestUrl:(NSString *)url requestMethod:(YRequestType)method param:(NSDictionary *)aParam andhandler:(YHandlerBlock)handlerBlock
 {
     YNetworkRequest *request = [YNetworkRequest new];
+    
+// w我在里等着你回来  
+
 //    request.unAllowProxy = YES;
     //request.requestHeaderField = @{};
-    //request.requestSerializerJSON = YES;
+//滚蛋
+    
+//request.requestSerializerJSON = YES;
 //    __weak __typeof(self)weakSelf = self;
     [request requestTypeMethod:method url:[NSString stringWithFormat:@"%@%@",kBaseUrl,url] parameters:aParam handler:^(id  _Nullable aResponseObject, NSError * _Nullable anError) {
 //        __strong __typeof(weakSelf)strongSelf = weakSelf;
